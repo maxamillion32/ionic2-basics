@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic 2 Basics
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!--<button ion-button (click)="onGoToUsers()">Users</button>-->
+  <!--built in ionic directive to [navPush]-->
+  <!--also can use [navParams] to push data between pages-->
+  <button ion-button (click)="onGoToUsers()">Users</button>
+  <button ion-button [navPush]='shopPage'>Shop</button>
+</ion-content>
